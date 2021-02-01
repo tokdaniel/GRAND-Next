@@ -49,7 +49,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#equipped-with">Equipped With</a></li>
         <li><a href="#styles">Styles</a></li>
         <li><a href="#test-env">Test Env</a></li>
       </ul>
@@ -133,17 +133,6 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -162,12 +151,10 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
-DanielTok - [@twitter_handle](https://twitter.com/twitter_handle) - email
+DanielTok - tokdaniel4@gmail.com - email
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
