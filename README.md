@@ -45,11 +45,6 @@
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </p>
 
@@ -63,6 +58,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#styles">Styles</a></li>
         <li><a href="#test-env">Test Env</a></li>
       </ul>
     </li>
@@ -94,19 +90,25 @@ Here's a blank template to get started:
 `github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 
-### Built With
+## Equipped With
 
-* []()
-* []()
-* []()
+* [Typescript](https://www.typescriptlang.org/)
+* [GRANDstack](https://grandstack.io/)
+* [Next.js](https://nextjs.org/)
+* [Storybook](https://nextjs.org/)
+* [GraphQL Codegen](https://graphql-code-generator.com/)
+* Docker containers
+
+### Styles
+
+* [Styled-Components](https://styled-components.com/)
+* [TailwindCss](https://tailwindcss.com/)
+* [Twin.Macro](https://github.com/ben-rogerson/twin.macro)
 
 ### Test env
 
-* []()
-* []()
-* []()
-
-
+* [Jest](https://jestjs.io/)
+* [Fast-Check](https://github.com/dubzzz/fast-check)
 
 <!-- GETTING STARTED -->
 ## Getting Started
