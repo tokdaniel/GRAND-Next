@@ -6,6 +6,6 @@ export const typeDefs = `
   }
   type Query {
     hello: String!,
-    userCount: Int! @cypher(statement: "MATCH (u:User) RETURN COUNT(u)")
+    users: [User]! @cypher(statement: "MATCH (u:User) RETURN u")
   }
 `
