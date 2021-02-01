@@ -1,0 +1,38 @@
+{
+  "name": "grand",
+  "version": "0.0.1",
+  "description": "GRAND stack for webshop",
+  "main": "index.js",
+  "scripts": {
+    "analyze": "cd app && npm run analyze",
+    "format": "cd app && npm run format",
+    "lint": "cd app && npm run lint",
+    "start": "cd app && npm run dev",
+    "test": "npm run docker:test:nextjs",
+    "test:ci": "npm run docker:test:nextjs:ci",
+    "test:coverage": "npm run docker:test:nextjs:coverage",
+    "test:coverage:view": "npm run docker:test:nextjs:coverage && open app/coverage/lcov-report/index.html",
+    "test:verbose": "npm run docker:test:nextjs:verbose",
+    "test:watch": "cd app && npm run test:watch",
+    "docker:build": "docker-compose up --remove-orphans --build --force-recreate",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose -v down && docker system prune -f --volumes",
+    "docker:test:nextjs": "docker-compose exec nextjs npm test",
+    "docker:test:nextjs:ci": "docker-compose exec nextjs npm run test:ci",
+    "docker:test:nextjs:coverage": "docker-compose exec nextjs npm run test:coverage",
+    "docker:test:nextjs:verbose": "docker-compose exec nextjs npm run test:verbose"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "yarn format && yarn lint"
+    }
+  },
+  "author": "Daniel Tok",
+  "license": "MIT",
+  "devDependencies": {
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^4.3.8"
+  }
+}

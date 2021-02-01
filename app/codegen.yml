@@ -1,0 +1,21 @@
+schema: http://localhost:3000/api/graphql
+generates:
+  ./types/apollo.d.ts:
+    documents: "./graphql/documents/**/*.gql"
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      noExport: true
+
+
+  graphql/generated/hooks.tsx:
+    documents: "./graphql/documents/**/*.gql"
+    plugins:
+      - typescript-react-apollo
+    config:
+      hooksImportFrom: "@apollo/react-hooks"
+      reactApolloVersion: 3
+      withHOC: false
+      withComponent: false
+      withHooks: true

@@ -1,0 +1,140 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type CreateUsersMutationResponse {
+    users: [User!]!
+}
+
+type DeleteInfo {
+    nodesDeleted: Int!
+    relationshipsDeleted: Int!
+}
+
+type Mutation {
+    createUsers(input: [UserCreateInput]!): CreateUsersMutationResponse!
+    deleteUsers(where: UserWhere): DeleteInfo!
+    updateUsers(update: UserUpdateInput, where: UserWhere): UpdateUsersMutationResponse!
+}
+
+type Query {
+    hello: String!
+    userCount: Int!
+    users(options: UserOptions, where: UserWhere): [User]!
+}
+
+type UpdateUsersMutationResponse {
+    users: [User!]!
+}
+
+type User {
+    name: String
+    userId: ID!
+}
+
+enum UserSort {
+    name_ASC
+    name_DESC
+    userId_ASC
+    userId_DESC
+}
+
+input UserAND {
+    AND: [UserAND]
+    OR: [UserOR]
+    name: String
+    name_CONTAINS: String
+    name_ENDS_WITH: String
+    name_IN: [String]
+    name_NOT: String
+    name_NOT_CONTAINS: String
+    name_NOT_ENDS_WITH: String
+    name_NOT_IN: [String]
+    name_NOT_STARTS_WITH: String
+    name_REGEX: String
+    name_STARTS_WITH: String
+    userId: ID
+    userId_CONTAINS: ID
+    userId_ENDS_WITH: ID
+    userId_IN: [ID]
+    userId_NOT: ID
+    userId_NOT_CONTAINS: ID
+    userId_NOT_ENDS_WITH: ID
+    userId_NOT_IN: [ID]
+    userId_NOT_STARTS_WITH: ID
+    userId_REGEX: String
+    userId_STARTS_WITH: ID
+}
+
+input UserCreateInput {
+    name: String
+    userId: ID!
+}
+
+input UserOR {
+    AND: [UserAND]
+    OR: [UserOR]
+    name: String
+    name_CONTAINS: String
+    name_ENDS_WITH: String
+    name_IN: [String]
+    name_NOT: String
+    name_NOT_CONTAINS: String
+    name_NOT_ENDS_WITH: String
+    name_NOT_IN: [String]
+    name_NOT_STARTS_WITH: String
+    name_REGEX: String
+    name_STARTS_WITH: String
+    userId: ID
+    userId_CONTAINS: ID
+    userId_ENDS_WITH: ID
+    userId_IN: [ID]
+    userId_NOT: ID
+    userId_NOT_CONTAINS: ID
+    userId_NOT_ENDS_WITH: ID
+    userId_NOT_IN: [ID]
+    userId_NOT_STARTS_WITH: ID
+    userId_REGEX: String
+    userId_STARTS_WITH: ID
+}
+
+input UserOptions {
+    limit: Int
+    skip: Int
+    sort: [UserSort]
+}
+
+input UserUpdateInput {
+    name: String
+    userId: ID
+}
+
+input UserWhere {
+    AND: [UserAND]
+    OR: [UserOR]
+    name: String
+    name_CONTAINS: String
+    name_ENDS_WITH: String
+    name_IN: [String]
+    name_NOT: String
+    name_NOT_CONTAINS: String
+    name_NOT_ENDS_WITH: String
+    name_NOT_IN: [String]
+    name_NOT_STARTS_WITH: String
+    name_REGEX: String
+    name_STARTS_WITH: String
+    userId: ID
+    userId_CONTAINS: ID
+    userId_ENDS_WITH: ID
+    userId_IN: [ID]
+    userId_NOT: ID
+    userId_NOT_CONTAINS: ID
+    userId_NOT_ENDS_WITH: ID
+    userId_NOT_IN: [ID]
+    userId_NOT_STARTS_WITH: ID
+    userId_REGEX: String
+    userId_STARTS_WITH: ID
+}
