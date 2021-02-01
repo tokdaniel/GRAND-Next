@@ -6,6 +6,7 @@
   "scripts": {
     "analyze": "cd app && npm run analyze",
     "format": "cd app && npm run format",
+    "init": "npm install && cd app && npm install",
     "lint": "cd app && npm run lint",
     "start": "cd app && npm run dev",
     "test": "npm run docker:test:nextjs",
