@@ -32,14 +32,15 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/tokdaniel/GRAND-Next/">
+    <img src="https://grandstack.io/img/GrandStack-Logo-Square.png" alt="Logo" width="80" height="80">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1280px-Nextjs-logo.svg.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">GRANDstack + NEXT.js</h3>
 
   <p align="center">
-    project_description
+      GRANDstack using NEXT.js
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
