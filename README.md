@@ -38,6 +38,10 @@
   </a>
 
   <h3 align="center">GRANDstack + NEXT.js</h3>
+   <p align="center">
+  <b>G</b>raphQL <b>R</b>eact <b>A</b>pollo <b>N</b>eo4j <b>D</b>atabase
+    <br />
+  </p>
 </p>
 
 
@@ -85,7 +89,11 @@ Here's a blank template to get started:
 ## Equipped With
 
 * [Typescript](https://www.typescriptlang.org/)
-* [GRANDstack](https://grandstack.io/)
+* [Grandstack](https://grandstack.io/)
+  - [GraphQL](https://graphql.org/)
+  - [React](https://reactjs.org/)
+  - [Apollo](https://www.apollographql.com/docs/)
+  - [Neo4j Db](https://neo4j.com/developer/language-guides/)
 * [Next.js](https://nextjs.org/)
 * [Storybook](https://nextjs.org/)
 * [GraphQL Codegen](https://graphql-code-generator.com/)
