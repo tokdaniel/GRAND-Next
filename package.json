@@ -6,6 +6,7 @@
   "scripts": {
     "analyze": "cd app && npm run analyze",
     "format": "cd app && npm run format",
+    "generate": "cd app && npm run generate",
     "init": "npm install && cd app && npm install",
     "lint": "cd app && npm run lint",
     "start": "cd app && npm run dev",
@@ -26,7 +27,7 @@
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "yarn format && yarn lint"
+      "pre-commit": "npm run format && npm run lint"
     }
   },
   "author": "Daniel Tok",
