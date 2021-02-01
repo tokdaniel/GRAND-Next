@@ -38,14 +38,6 @@
   </a>
 
   <h3 align="center">GRANDstack + NEXT.js</h3>
-
-  <p align="center">
-      GRANDstack using NEXT.js
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-  </p>
 </p>
 
 
