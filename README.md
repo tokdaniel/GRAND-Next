@@ -75,17 +75,6 @@
 </details>
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
-
-
 ## Equipped With
 
 * [Typescript](https://www.typescriptlang.org/)
@@ -118,10 +107,8 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* nodejs
+* docker
 
 ### Installation
 
@@ -129,17 +116,30 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    git clone https://github.com/tokdaniel/GRAND-Next/
    ```
-2. Install NPM packages
-   ```sh
-   npm install
+2. Install dependecies:
    ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+    npm run init
+   ```
+   this installs every node dependency in the root folder, and in the app folder as well
+3. a). Either start up with docker
+   ```
+    cd <into root folder>
+    docker-compose up / docker-compose up -d
+   ```
+   you can start up services individually by
+   ```
+    docker-compose up -d neo4j nextjs
+   ```
+3. b). Or you run npm scripts on your computer:
+    ```
+     cd app
+     npm run dev
+    ```
+4. Generate apollo types and react hooks
+    after starting up the nextjs service run
+    ```
+      npm run generate
+    ```
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -151,7 +151,6 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
 
 
 <!-- LICENSE -->
