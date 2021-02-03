@@ -121,7 +121,7 @@ This is an example of how to list things you need to use the software and how to
     npm run init
    ```
    this installs every node dependency in the root folder, and in the app folder as well
-3.a Either start up with docker
+3. a). Either start up with docker
    ```
     cd <into root folder>
     docker-compose up / docker-compose up -d
@@ -130,7 +130,7 @@ This is an example of how to list things you need to use the software and how to
    ```
     docker-compose up -d neo4j nextjs
    ```
-3.b Or you run npm scripts on your computer:
+3. b). Or you run npm scripts on your computer:
     ```
      cd app
      npm run dev
