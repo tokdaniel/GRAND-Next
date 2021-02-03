@@ -37,3 +37,4 @@ yarn-error.log*
 
 #graphql
 app/graphql/generated
+app/types/apollo.d.ts
